@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        /* Float four columns side by side */
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        /* Remove extra left and right margins, due to padding */
+        
+        .row {
+            margin: 0 -5px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive columns */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        /* Style the counter cards */
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2>Choose the Type of your Gate</h2> -->
+    <!-- <p>Resize the browser window to see the effect.</p> -->
+    <br>
+
+    <div class="center">
+        <iframe width="550" height="230" src="https://www.youtube.com/embed/iCWk1_dl1_s?playlist=iCWk1_dl1_s&loop=1">
+    </iframe>
+    </div>
+    <h4 class="center">Choose control from phone or just remote-control</h4>
+    <div class="row center">
+        <div class="column">
+            <div class="card">
+                <h3>Smart Integration</h3>
+                <img src="remote.jpg" alt="Alps" width="200" height="200">
+                <br>
+                <button class="button button1"> <a href="https://www.zhome.com.eg/products/somfy-sliding-gate-elixo-500-230v-rts-tahoma" target="_blank" style="text-decoration:none">Next </a>
+                </button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h3>Control from remote-control</h3>
+                <img src="control.jpg" alt="Alps" width="200" height="200">
+                <br>
+                <button class="button button2"> <a href="https://www.zhome.com.eg/products/somfy-sliding-gate-elixo-500-230v-rts-1" target="_blank" style="text-decoration:none">Next </a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
